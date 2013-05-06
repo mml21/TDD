@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD.MultiCurrencyMoney
 {
-    public class Money
+    public abstract class Money
     {
         protected internal int amount;
 
@@ -17,5 +17,12 @@ namespace TDD.MultiCurrencyMoney
             return amount == money.amount
                 && GetType() == obj.GetType() ;
         }
+
+        public static Dollar Dollar(int amount)
+        {
+            return new Dollar(amount);
+        }
+
+        public abstract Money Times(int amount);
     }
 }
