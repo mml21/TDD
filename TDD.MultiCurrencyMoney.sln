@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.MultiCurrencyMoney", "TDD.MultiCurrencyMoney\TDD.MultiCurrencyMoney.csproj", "{348A121B-F70C-40DE-8297-6264CEB613D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.MultiCurrencyMoney.Tests", "TDD.MultiCurrencyMoney.Tests\TDD.MultiCurrencyMoney.Tests.csproj", "{CFB071E8-C70F-4FA9-9A47-4666D92067AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{348A121B-F70C-40DE-8297-6264CEB613D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348A121B-F70C-40DE-8297-6264CEB613D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348A121B-F70C-40DE-8297-6264CEB613D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348A121B-F70C-40DE-8297-6264CEB613D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB071E8-C70F-4FA9-9A47-4666D92067AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB071E8-C70F-4FA9-9A47-4666D92067AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB071E8-C70F-4FA9-9A47-4666D92067AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB071E8-C70F-4FA9-9A47-4666D92067AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
