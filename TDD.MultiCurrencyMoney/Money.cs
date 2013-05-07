@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace TDD.MultiCurrencyMoney
 {
-    public abstract class Money
+    public class Money
     {
         protected internal int amount;
 
         private String currency;
 
-
-        public abstract Money Times(int amount);
 
         public Money(int amount, string currency)
         {
@@ -26,22 +24,29 @@ namespace TDD.MultiCurrencyMoney
             return currency;
         }
 
+        public Money Times(int multiplier)
+        {
+            return new Money(amount * multiplier, currency);
+        }
 
         public override bool Equals(Object obj)
         {
-            Money money = (Money)obj;
+            Money money = (Money) obj;
             return amount == money.amount
-                && GetType() == obj.GetType() ;
+                && Currency().Equals(money.Currency()) ;
         }
 
-        public static Dollar Dollar(int amount)
+        // Factory Method
+        public static Money Dollar(int amount)
         {
-            return new Dollar(amount, "USD");
+            return new Money(amount, "USD");
         }
 
-        public static Franc Franc(int amount)
+        // Factory Method
+        public static Money Franc(int amount)
         {
-            return new Franc(amount, "CHF");
+            return new Money(amount, "CHF");
         }
+
     }
 }
