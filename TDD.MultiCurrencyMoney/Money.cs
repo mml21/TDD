@@ -10,6 +10,22 @@ namespace TDD.MultiCurrencyMoney
     {
         protected internal int amount;
 
+        private String currency;
+
+
+        public abstract Money Times(int amount);
+
+        public Money(int amount, string currency)
+        {
+            this.amount = amount;
+            this.currency = currency;
+        }
+
+        public string Currency()
+        {
+            return currency;
+        }
+
 
         public override bool Equals(Object obj)
         {
@@ -20,9 +36,12 @@ namespace TDD.MultiCurrencyMoney
 
         public static Dollar Dollar(int amount)
         {
-            return new Dollar(amount);
+            return new Dollar(amount, "USD");
         }
 
-        public abstract Money Times(int amount);
+        public static Franc Franc(int amount)
+        {
+            return new Franc(amount, "CHF");
+        }
     }
 }
