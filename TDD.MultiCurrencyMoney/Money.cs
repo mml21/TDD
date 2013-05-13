@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD.MultiCurrencyMoney
 {
-    public class Money
+    public class Money : Expression
     {
         protected internal int amount;
 
@@ -48,5 +48,9 @@ namespace TDD.MultiCurrencyMoney
             return new Money(amount, "CHF");
         }
 
+        public Expression Plus(Money addend)
+        {
+            return new Money(amount + addend.amount, currency);
+        }
     }
 }
