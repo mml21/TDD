@@ -8,5 +8,6 @@ namespace TDD.MultiCurrencyMoney
 {
     public interface Expression
     {
+        Money Reduce(string to);
     }
 }

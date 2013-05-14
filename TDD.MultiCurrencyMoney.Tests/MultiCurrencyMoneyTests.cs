@@ -40,6 +40,33 @@ namespace TDD.MultiCurrencyMoney.Tests
             Assert.AreEqual(Money.Dollar(10), reduced);
         }
 
+        [TestMethod]
+        public void TestPlusReturnsSum()
+        {
+            Money five = Money.Dollar(5);
+            Expression result = five.Plus(five);
+            Sum sum = (Sum) result;
+            Assert.AreEqual(five, sum.Augend);
+            Assert.AreEqual(five, sum.Addend);
+        }
+
+        [TestMethod]
+        public void TestReduceSum()
+        {
+            Expression sum = new Sum(Money.Dollar(3), Money.Dollar(4));
+            Bank bank = new Bank();
+            Money reduced = bank.Reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(7), reduced);
+        }
+
+        [TestMethod]
+        public void TestReduceMoney()
+        {
+            Bank bank = new Bank();
+            Money result = bank.Reduce(Money.Dollar(1), "USD");
+            Assert.AreEqual(Money.Dollar(1), result);
+        }
+
 
     }
 }
