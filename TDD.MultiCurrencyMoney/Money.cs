@@ -24,7 +24,7 @@ namespace TDD.MultiCurrencyMoney
             return currency;
         }
 
-        public Money Times(int multiplier)
+        public Expression Times(int multiplier)
         {
             return new Money(amount * multiplier, currency);
         }
@@ -36,6 +36,7 @@ namespace TDD.MultiCurrencyMoney
                 && Currency().Equals(money.Currency()) ;
         }
 
+ 
         // Factory Method
         public static Money Dollar(int amount)
         {
@@ -48,14 +49,16 @@ namespace TDD.MultiCurrencyMoney
             return new Money(amount, "CHF");
         }
 
-        public Expression Plus(Money addend)
+        public Expression Plus(Expression addend)
         {
             return new Sum(this, addend);
         }
 
-        public Money Reduce(string to)
+        public Money Reduce(Bank bank, string to)
         {
-            return this;
+            int rate = bank.Rate(currency, to);
+            return new Money(amount / rate, to);
         }
+
     }
 }

@@ -67,6 +67,38 @@ namespace TDD.MultiCurrencyMoney.Tests
             Assert.AreEqual(Money.Dollar(1), result);
         }
 
+        [TestMethod]
+        public void TestReduceMoneyDifferentCurrency()
+        {
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Money result = bank.Reduce(Money.Franc(2), "USD");
+            Assert.AreEqual(Money.Dollar(1), result);
+        }
+
+        [TestMethod]
+        [Ignore]
+        public void TestArrayEquals()
+        {
+            Assert.AreEqual(new Object[] {"abc"}, new object[] { "abc"});
+        }
+
+        [TestMethod]
+        public void TestIdentityRate()
+        {
+            Assert.AreEqual(1, new Bank().Rate("USD", "USD"));
+        }
+
+        [TestMethod]
+        public void TestMixedAddition()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
+            Assert.AreEqual(Money.Dollar(10), result);
+        }
 
     }
 }
