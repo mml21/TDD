@@ -36,7 +36,7 @@ namespace TDD.MultiCurrencyMoney
                 && Currency().Equals(money.Currency()) ;
         }
 
- 
+
         // Factory Method
         public static Money Dollar(int amount)
         {
@@ -59,6 +59,7 @@ namespace TDD.MultiCurrencyMoney
             int rate = bank.Rate(currency, to);
             return new Money(amount / rate, to);
         }
+
 
     }
 }

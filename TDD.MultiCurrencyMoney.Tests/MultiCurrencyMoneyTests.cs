@@ -100,5 +100,36 @@ namespace TDD.MultiCurrencyMoney.Tests
             Assert.AreEqual(Money.Dollar(10), result);
         }
 
+        [TestMethod]
+        public void TestSumPlusMoney()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Expression sum = new Sum(fiveBucks, tenFrancs).Plus(fiveBucks);
+            Money result = bank.Reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(15), result);
+        }
+
+        [TestMethod]
+        public void TestSumTimes()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Expression sum = new Sum(fiveBucks, tenFrancs).Times(2);
+            Money result = bank.Reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(20), result);
+        }
+
+        [TestMethod]
+        [Ignore]
+        public void TestPlusSameCurrencyReturnsMoney()
+        {
+            Expression sum = Money.Dollar(1).Plus(Money.Dollar(1));
+            Assert.IsTrue(sum is Money);
+        }
     }
 }
