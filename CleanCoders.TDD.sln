@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.NameInverter", "TDD.NameInverter\TDD.NameInverter.csproj", "{F31BBFFF-C086-47C3-8420-AF1CC152C7D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.NameInverter", "TDD.NameInverter\CleanCoders.TDD.NameInverter.csproj", "{F31BBFFF-C086-47C3-8420-AF1CC152C7D8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{452C184C-03DF-4CF0-97A6-F82FF1A15820}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.PrimeFactors", "CleanCoders.TDD.PrimeFactors\CleanCoders.TDD.PrimeFactors.csproj", "{AC04C0D4-43E8-4ADB-B6B0-48EB80079A21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,10 @@ Global
 		{F31BBFFF-C086-47C3-8420-AF1CC152C7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F31BBFFF-C086-47C3-8420-AF1CC152C7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F31BBFFF-C086-47C3-8420-AF1CC152C7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC04C0D4-43E8-4ADB-B6B0-48EB80079A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC04C0D4-43E8-4ADB-B6B0-48EB80079A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC04C0D4-43E8-4ADB-B6B0-48EB80079A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC04C0D4-43E8-4ADB-B6B0-48EB80079A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
