@@ -37,19 +37,11 @@ namespace CleanCoders.TDD.PrimeFactors
         private List<int> Of(int n) // Returns primes factors of a number
         {
             var factors = new List<int>();
-            if (n > 1)
+
+            for (int divisor = 2; n > 1;divisor++)
             {
- 
-                while (n % 2 == 0)
-                {
-                    factors.Add(2);
-                    n /= 2;
-                }
-                while (n % 3 == 0)
-                {
-                    factors.Add(3);
-                    n /= 3;
-                }
+                for (; n % divisor == 0; n /= divisor)
+                    factors.Add(divisor);
             }            
             if (n > 1) 
                 factors.Add(n);
