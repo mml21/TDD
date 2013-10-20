@@ -6,7 +6,7 @@ using System.Linq;
 namespace CleanCoders.TDD.PrimeFactors
 {
     [TestClass]
-    // Rule: When the Tests more specific, the Production code gets more generic
+    // Rule: As the Tests more specific, the Production code gets more generic
     // While more general than If, If degenerate form of While
     public class PrimesFactorsTest
     {
@@ -40,11 +40,15 @@ namespace CleanCoders.TDD.PrimeFactors
         {
             var factors = new List<int>();
 
-            // This algorithm is effectively The Sieve of Erathostenes
-            // Minor improvement: Terminate algorithm with sqrt(n)
-            for (int divisor = 2; n > 1;divisor++)
+            // This algorithm is effectively The Sieve of Eratosthenes
+            // Minor improvement: Terminate loop with sqrt(n)
+            var termination = Math.Sqrt(n);
+            for (int divisor = 2; n > 1 || divisor < termination; divisor++)
+            {
                 for (; n % divisor == 0; n /= divisor)
                     factors.Add(divisor);
+            }
+
 
             return factors;
         }
