@@ -7,7 +7,7 @@ namespace CleanCoders.TDD.PrimeFactors
 {
     [TestClass]
     // Rule: When the Tests more specific, the Production code gets more generic
-        // While more general than If, If degenerate form of While
+    // While more general than If, If degenerate form of While
     public class PrimesFactorsTest
     {
         private List<int> List(params int[] ints)
@@ -32,12 +32,16 @@ namespace CleanCoders.TDD.PrimeFactors
             AssertPrimeFactors(7, List(7));
             AssertPrimeFactors(8, List(2, 2, 2));
             AssertPrimeFactors(9, List(3, 3));
+            AssertPrimeFactors(2 * 2 * 3 * 3 * 5 * 7 * 11 * 11 * 13, 
+                List(2, 2, 3, 3, 5, 7, 11, 11, 13));
         }
 
         private List<int> Of(int n) // Returns primes factors of a number
         {
             var factors = new List<int>();
 
+            // This algorithm is effectively The Sieve of Erathostenes
+            // Minor improvement: Terminate algorithm with sqrt(n)
             for (int divisor = 2; n > 1;divisor++)
                 for (; n % divisor == 0; n /= divisor)
                     factors.Add(divisor);
