@@ -43,7 +43,7 @@ namespace CleanCoders.TDD.PrimeFactors
             // This algorithm is effectively The Sieve of Eratosthenes
             // Minor improvement: Terminate loop with sqrt(n)
             var termination = Math.Sqrt(n);
-            for (int divisor = 2; n > 1 || divisor < termination; divisor++)
+            for (int divisor = 2; n > 1; divisor++)
             {
                 for (; n % divisor == 0; n /= divisor)
                     factors.Add(divisor);
