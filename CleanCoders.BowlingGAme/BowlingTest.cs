@@ -20,6 +20,17 @@ namespace CleanCoders.BowlingGAme
                 g.Roll(pins);
         }
 
+        private void RollSpare()
+        {
+            g.Roll(5);
+            g.Roll(5);
+        }
+
+        private void RollStrike()
+        {
+            g.Roll(10);
+        }
+
         [TestMethod]
         public void GutterGame()
         {
@@ -37,11 +48,26 @@ namespace CleanCoders.BowlingGAme
         [TestMethod]
         public void OneSpare()
         {
-            g.Roll(5);
-            g.Roll(5); // Spare
+            RollSpare();
             g.Roll(3);
             RollMany(17, 0);
             Assert.AreEqual(16, g.Score());
+        }
+
+        [TestMethod]
+        public void OneStrike()
+        {
+            RollStrike();
+            g.Roll(3); // After a strike we roll two more balls
+            g.Roll(4);
+            RollMany(16, 0);
+            Assert.AreEqual(24, g.Score());
+        }
+
+        [TestMethod]
+        public void PerfectGame() {
+            RollMany(12, 10);
+            Assert.AreEqual(300, g.Score());
         }
 
 
