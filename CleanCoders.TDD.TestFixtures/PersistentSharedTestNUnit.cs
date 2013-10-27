@@ -1,51 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
+using System;
 
 namespace CleanCoders.TDD.TestFixtures
 {
-    [TestClass]
-    public class PersistentSharedTest
+    [TestFixture]
+    public class PersistentSharedTestNUnit
     {
-        public PersistentSharedTest()
+        public PersistentSharedTestNUnit()
         {
             Console.Out.WriteLine("construct");
         }
 
-
-        [ClassInitialize]
-        public static void SuiteSetup(TestContext testContext)
+        [TestFixtureSetUp]
+        public void SuiteSetup()
         {
             Console.Out.WriteLine("Suite setup");
         }
 
-        [ClassCleanup]
-        public static void SuiteTeardown()
+        [TestFixtureTearDown]
+        public void SuiteTeardown()
         {
             Console.Out.WriteLine("Suite teardown");
         }
 
-        [TestInitialize]
+        [SetUp]
         public void SetUp()
         {
             Console.Out.WriteLine("setup");
         }
 
-        [TestCleanup]
+        [TearDown]
         public void TearDown() {
             Console.Out.WriteLine("teardown");
         }
 
-        [TestMethod]
+        [TestCase]
         public void TestMethod1()
         {
             Console.Out.WriteLine("test1");
         }
 
-        [TestMethod]
+        [TestCase]
         public void TestMethod2()
         {
             Console.Out.WriteLine("test2");
