@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.TestFixture
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.GrowingTestSetup", "CleanCoders.TDD.GrowingTestSetup\CleanCoders.TDD.GrowingTestSetup.csproj", "{69659C3D-AA72-4948-A8C4-8432BD3D068F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.TestDesign", "CleanCoders.TDD.TestDesign\CleanCoders.TDD.TestDesign.csproj", "{34C8295D-1349-4D4B-AE0B-A318E3FF64FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.TestProcess", "CleanCoders.TDD.TestProcess\CleanCoders.TDD.TestProcess.csproj", "{210E494A-E905-41EF-82D6-7B9BCF97F47C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,14 @@ Global
 		{69659C3D-AA72-4948-A8C4-8432BD3D068F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69659C3D-AA72-4948-A8C4-8432BD3D068F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69659C3D-AA72-4948-A8C4-8432BD3D068F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C8295D-1349-4D4B-AE0B-A318E3FF64FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C8295D-1349-4D4B-AE0B-A318E3FF64FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C8295D-1349-4D4B-AE0B-A318E3FF64FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C8295D-1349-4D4B-AE0B-A318E3FF64FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

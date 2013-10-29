@@ -39,7 +39,18 @@ The test covers the public function and therefore also those private.
 Write the tests through the public interface. If you need to test a private function you have
 to promote it to public or protected.
 
-What test do you write first?:
+What test do you write first?: On the early stages of the project
 - You write the test that forces you to write the code that you already know you want to write. 
 
 
+- Some folks got in their head that TDD means you don't do any planning or upfront thinking.
+
+- Write down the lists of tests you need before you write any code.
+
+Behaviour-driven development (BDD): Given When Then. Useful to name our tests.
+
+Arrange -> Given (a test context)
+
+Act -> When (we perform a function)
+
+Assert -> Then (we can expect to assert certain results)
