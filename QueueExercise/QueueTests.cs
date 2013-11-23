@@ -111,11 +111,11 @@ namespace QueueExercise
 
     public class Queue
     {
-        private int size = 0;
         private static int MAX_SIZE = 3;
         private int[] elements = new int[MAX_SIZE];
-        private int queueFront = 0;
-        private int queueBack = 0;
+        private int size;
+        private int queueFront;
+        private int queueBack;
 
         public int Size()
         {
@@ -129,12 +129,7 @@ namespace QueueExercise
 
             size++;
 
-            if (queueBack == MAX_SIZE && size < MAX_SIZE)
-            {
-                queueBack = 0;
-            }
-
-            elements[queueBack++] = i;
+            elements[queueBack++ % MAX_SIZE] = i;
         }
 
         public int Pop()
@@ -142,13 +137,8 @@ namespace QueueExercise
             if (size == 0)
                 throw new UnderflowException();
 
-            if (queueFront == MAX_SIZE && size < MAX_SIZE)
-            {
-                queueFront = 0;
-            }
-
             --size;
-            return elements[queueFront++];
+            return elements[queueFront++ % MAX_SIZE];
         }
 
         public class UnderflowException : Exception
