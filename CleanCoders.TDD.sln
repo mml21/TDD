@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.TestDesign"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCoders.TDD.TestProcess", "CleanCoders.TDD.TestProcess\CleanCoders.TDD.TestProcess.csproj", "{210E494A-E905-41EF-82D6-7B9BCF97F47C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueExercise", "QueueExercise\QueueExercise.csproj", "{15BF2A27-3E1B-42B9-97EC-1901677E5A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorsKata", "PrimeFactorsKata\PrimeFactorsKata.csproj", "{B2E98567-9621-420E-9744-AF2504735898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +64,14 @@ Global
 		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{210E494A-E905-41EF-82D6-7B9BCF97F47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BF2A27-3E1B-42B9-97EC-1901677E5A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BF2A27-3E1B-42B9-97EC-1901677E5A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BF2A27-3E1B-42B9-97EC-1901677E5A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BF2A27-3E1B-42B9-97EC-1901677E5A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E98567-9621-420E-9744-AF2504735898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E98567-9621-420E-9744-AF2504735898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E98567-9621-420E-9744-AF2504735898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E98567-9621-420E-9744-AF2504735898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
