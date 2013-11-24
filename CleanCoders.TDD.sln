@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorsKata", "PrimeFa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordWrapperKata", "WordWrapperKata\WordWrapperKata.csproj", "{96CF2965-7B09-45F6-8CCC-602679295505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingKata", "SortingKata\SortingKata.csproj", "{A715FCE0-7BF5-421D-AC3F-DBC4CDF27C80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{96CF2965-7B09-45F6-8CCC-602679295505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96CF2965-7B09-45F6-8CCC-602679295505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96CF2965-7B09-45F6-8CCC-602679295505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A715FCE0-7BF5-421D-AC3F-DBC4CDF27C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A715FCE0-7BF5-421D-AC3F-DBC4CDF27C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A715FCE0-7BF5-421D-AC3F-DBC4CDF27C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A715FCE0-7BF5-421D-AC3F-DBC4CDF27C80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
