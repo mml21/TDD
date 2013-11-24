@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueExercise", "QueueExerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorsKata", "PrimeFactorsKata\PrimeFactorsKata.csproj", "{B2E98567-9621-420E-9744-AF2504735898}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordWrapperKata", "WordWrapperKata\WordWrapperKata.csproj", "{96CF2965-7B09-45F6-8CCC-602679295505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{B2E98567-9621-420E-9744-AF2504735898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2E98567-9621-420E-9744-AF2504735898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2E98567-9621-420E-9744-AF2504735898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CF2965-7B09-45F6-8CCC-602679295505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CF2965-7B09-45F6-8CCC-602679295505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CF2965-7B09-45F6-8CCC-602679295505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CF2965-7B09-45F6-8CCC-602679295505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
